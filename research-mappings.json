@@ -188,6 +188,48 @@
 					"index": "not_analyzed"
 				}
 			}
-		}
+		},
+		"onion": {
+			"properties": {
+				"domain": {
+					"type": "keyword",
+					"index": "not_analyzed"
+				},
+				"first_crawled": {
+					"type": "date",
+					"format": "dateOptionalTime"
+				},
+				"last_crawled": {
+					"type": "date",
+					"format": "dateOptionalTime"
+				},
+				"reputation_score": {
+					"type": "double"
+				},
+				"link_source": {
+					"type": "keyword",
+					"index": "not_analyzed"
+				}
+			}
+		},
+		"link_source": {
+			"properties": {
+				"domain": {
+					"type": "keyword",
+					"index": "not_analyzed"
+				},
+				"first_crawled": {
+					"type": "date",
+					"format": "dateOptionalTime"
+				},
+				"last_crawled": {
+					"type": "date",
+					"format": "dateOptionalTime"
+				},
+				"reputation": {
+					"type": "double"
+				}
+			}
+		},
 	}
 }
