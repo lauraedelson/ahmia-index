@@ -88,15 +88,15 @@
 			"properties": {
                                 "raw_url": {
                                         "type": "keyword",
-                                        "index": "not_analyzed"
+                                        "index": "false"
                                 },
 				"domain": {
 					"type": "keyword",
-					"index": "not_analyzed"
+					"index": "false"
 				},
                                 "raw_title": {
                                         "type": "keyword",
-                                        "index": "not_analyzed"
+                                        "index": "false"
                                 },
 				"title": {
 					"type": "text",
@@ -105,12 +105,12 @@
 				"meta": {
 					"type": "keyword",
 					"copy_to": "fancy",
-					"index": "not_analyzed"
+					"index": "false"
 				},
 				"anchors": {
 					"type": "keyword",
 					"copy_to": "fancy",
-					"index": "not_analyzed"
+					"index": "false"
 				},
 				"fancy": {
 					"type": "text",
@@ -129,7 +129,7 @@
 
                                 "raw_text": {
                                         "type": "binary",
-					"index": "no"
+					"index": "false"
                                 },
 
 				"content": {
@@ -149,15 +149,15 @@
 
 				"lang": {
 					"type": "keyword",
-					"index": "not_analyzed"
+					"index": "false"
 				},
 				"content_type": {
 					"type": "keyword",
-					"index": "not_analyzed"
+					"index": "false"
 				},
 				"content_simhash": {
 					"type": "keyword",
-					"index": "not_analyzed"
+					"index": "false"
 				},
 				"last_seen": {
 					"type": "date",
@@ -169,15 +169,15 @@
 			"properties": {
                                 "raw_url": {
                                         "type": "keyword",
-                                        "index": "not_analyzed"
+                                        "index": "false"
                                 },
 				"domain": {
 					"type": "keyword",
-					"index": "not_analyzed"
+					"index": "false"
 				},
                                 "raw_title": {
                                         "type": "keyword",
-                                        "index": "not_analyzed"
+                                        "index": "false"
                                 },
 				"crawl_time": {
 					"type": "date",
@@ -185,7 +185,7 @@
 				},
 				"content_simhash": {
 					"type": "keyword",
-					"index": "not_analyzed"
+					"index": "false"
 				}
 			}
 		},
@@ -193,7 +193,7 @@
 			"properties": {
 				"domain": {
 					"type": "keyword",
-					"index": "not_analyzed"
+					"index": "false"
 				},
 				"first_crawled": {
 					"type": "date",
@@ -208,7 +208,7 @@
 				},
 				"link_source": {
 					"type": "keyword",
-					"index": "not_analyzed"
+					"index": "false"
 				}
 			}
 		},
@@ -216,7 +216,7 @@
 			"properties": {
 				"domain": {
 					"type": "keyword",
-					"index": "not_analyzed"
+					"index": "false"
 				},
 				"first_crawled": {
 					"type": "date",
